@@ -1,0 +1,110 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hi-lg{
+        display: none;
+    }
+    .hi-lg-2{
+        display: none;
+    }
+    form .effect{
+        width:200px
+    }
+    .over-lay-card ul li {padding:0}
+
+    .copyright span{padding: 0}
+
+    .copyright ul li{padding: 0}
+
+    .copyright ul {margin-bottom: 2px;}
+  }
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    #open-nav{
+        display: none;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .collapse.show{
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        margin-top: 35px;
+    }
+    .collapse.show ul li{
+        font-size: 20px;
+        }
+    .navbar-toggler{
+        position: absolute;
+        top:-10px;
+        left: 25px;
+    }
+    .over-lay-card ul li {padding:3px; margin: 0 0 5px 0;}
+
+    .deal .rw {padding-top: 50px}
+
+}
+
+
+@media (max-width: 767px) { 
+    #open-nav{
+        display: none;
+    }
+    .icon-nav{
+        margin-top: 15px;
+        margin-right: 30px;
+        position: static;
+        right: 0;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top: -70px;
+        left: 0;
+    }
+    .hi-lg{
+        display: none;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .collapse.show {background: #fff; height: 100%; width: 100%; margin-top: 35px}
+
+    .collapse.show ul li {font-size: 20px}
+
+    .navbar-toggler {margin-left:15px; margin-top: 15px}
+
+    .one h2{ font-size: 60px;}
+
+    .one button {width: 200px; letter-spacing: 1px;}
+
+    .tow {padding-left: 0;  margin: 0}
+
+    .tow.info-tow h2 {font-size: 60px }
+
+    .tow.info-tow p {width: 300px; font-size: 16px}
+
+    .woma .man-img::after,.woma .women-img::after {right: 20%; top:35%; font-size: 50px;}
+
+    .card .product-stars {opacity: 1; bottom: 20px}
+
+    .stor .Product .card .img-fluid .zo {opacity: 1; transform:scale(1,1)}
+
+    .card .over-lay-card {bottom: 90px; opacity:1}
+
+    .over-lay-card ul li {padding:0}
+
+    .deal .rw{padding-left: 20px }
+
+    .deal{ height: 120vh}
+
+    .over-lay-card ul li{padding:0; white-space: nowrap;}
+
+    .touch form {padding-top: 10px; width: 100% }
+      
+   
+}
+@media only screen and (max-width: 1000px) {
+    .woma .man-img::after,.woma .women-img::after{
+      right: 17%;
+    }
+  }
