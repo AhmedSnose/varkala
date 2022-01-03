@@ -1,11 +1,18 @@
 
 ///================================================================
 
+
 let productsContainer = document.querySelector(".pizza");
 let bagNumper = document.querySelector(".cart-span")
+let ToT = document.querySelector(".ToT")
 let stor = JSON.parse(localStorage.getItem("productsCart"))
 let allPrice = document.querySelector(".allPrice");
-let car = [...stor]
+
+!stor ? ( bagNumper.innerHTML = 'No Item Found' , ToT.style.display ='none') : null
+
+
+let car = stor ? [...stor] : 1
+
 
 class Utilities{
   localStr
@@ -25,7 +32,7 @@ class Utilities{
    }
 
   loadBagNum(){
-    bagNumper.innerHTML = car.length ? car.length: "No Item"
+    bagNumper.innerHTML = car.length ? car.length : "No Item"
   }
 
 
@@ -37,7 +44,7 @@ class Utilities{
   }
 
  async loadItems(){
-    this.localStr.map((item) => {
+    this.localStr?.map((item) => {
           let TotalPrice = item.price * item.inCarst;      
           document.querySelector('.products').innerHTML += `
       
@@ -159,8 +166,11 @@ document.addEventListener("DOMContentLoaded",()=>{
   u.loadBagNum() 
 
   u.loadItems().then(da=>{
-    u.removeItem()
-    u.decrease()
-    u.inCrease()
+    if(stor){
+      u.removeItem()
+      u.decrease()
+      u.inCrease()
+    }
   })
+  
 })

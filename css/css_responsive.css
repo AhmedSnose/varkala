@@ -83,7 +83,7 @@
 
     .tow.info-tow p {width: 300px; font-size: 16px}
 
-    .woma .man-img::after,.woma .women-img::after {right: 20%; top:35%; font-size: 50px;}
+    .woma .man-img::after,.woma .women-img::after {right: 20%; top:35%; font-size: 29px;}
 
     .card .product-stars {opacity: 1; bottom: 20px}
 
@@ -107,4 +107,36 @@
     .woma .man-img::after,.woma .women-img::after{
       right: 17%;
     }
+    form{
+        margin-right: 10px;
+    }
+    form button{
+        right: 32px;
+    }
+
   }
+
+  @media (max-width: 620px) { 
+    .pizza{
+        flex-direction: column;
+    }
+    #alerts{
+        width: 300px;
+    }
+}
+
+  @media (max-width: 360px) {   
+      .tow .info-tow{
+        padding: 141px 0 0 38px;
+      }
+      .woma .man-img::after, .woma .women-img::after{
+        font-size: 25px;
+      }
+      .pizza__details{
+        flex-wrap: wrap;
+      }
+      .pizza__tag.pizza__tag--1,.pizza__tag.pizza__tag--2{
+          display: none;
+      }
+}
+
